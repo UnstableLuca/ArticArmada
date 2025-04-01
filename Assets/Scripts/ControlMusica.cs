@@ -12,4 +12,9 @@ public class ControlMusica : MonoBehaviour
     {
         audioMixer.SetFloat("VolumenMusica", Mathf.Log10(slidermusica) * 20);
     }
+
+    public void Start()
+    {
+        audioMixer.SetFloat("VolumenMusica", 1);
+    }
 }

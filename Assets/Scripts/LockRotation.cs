@@ -23,7 +23,7 @@ public class LockRotation : MonoBehaviour
             transform.rotation = Quaternion.Euler(startRotation.x, startRotation.y, targetObject.transform.eulerAngles.z - 90);
 
             // Lock position to the initial X and Y, and allow Z to change
-            transform.position = startPosition;
+            transform.position = new Vector3(targetObject.transform.position.x, startPosition.y, targetObject.transform.position.z);
         }
         else
         {

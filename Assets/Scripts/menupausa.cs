@@ -22,7 +22,7 @@ public class menupausa : MonoBehaviour
                 ObjetoMenuPausa.SetActive(true);
                 Pausa = true;
 
-                Time.timeScale = 0;
+                Time.timeScale = 0f;
                 Cursor.visible = true;
                 Cursor.lockState = CursorLockMode.None;
             }
@@ -37,7 +37,7 @@ public class menupausa : MonoBehaviour
         ObjetoMenuPausa.SetActive(false);
         Pausa = false;
 
-        Time.timeScale = 1;
+        Time.timeScale = 1f;
         Cursor.visible = false;
         Cursor.lockState = CursorLockMode.Locked;
     }

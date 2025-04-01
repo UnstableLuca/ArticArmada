@@ -58,6 +58,11 @@ public class CannonLogic : MonoBehaviour
 
     void Update()
     {
+        if (Time.timeScale == 0f)
+        {
+            return;
+        }
+
         cooldownSlider.value = Mathf.Clamp(nextFireTime - Time.time, 0, fireRate);
 
         float mouseX = Input.GetAxis("Mouse X") * sensitivity;

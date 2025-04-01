@@ -18,13 +18,18 @@ public class TutorialManager : MonoBehaviour
 
     void Start()
     {
-     
+
         narradorText.text = "¿Estás comenzando en la Arctic Armada o buscas recordar lo básico? ¡Pues has venido al lugar correcto! " +
                             "Prueba a mover el cañón con el ratón y a disparar pulsando click izquierdo.";
     }
 
     void Update()
     {
+        if(Time.timeScale == 0f)
+        {
+            return;
+        }
+
         // Detectar movimiento del ratón
         if (tutorialStep == 0 && Input.GetAxis("Mouse X") != 0)
         {
@@ -61,7 +66,7 @@ public class TutorialManager : MonoBehaviour
         Debug.Log("Enemy spawned successfully at: " + spawnPoint.position);
         enemy.GetComponent<EnemyShip>().SetTutorialManager(this); // Asignar el tutorial manager al enemigo
     }
-    
+
     public void EnemyDestroyed()
     {
         if (tutorialStep == 1)
@@ -90,7 +95,7 @@ public class TutorialManager : MonoBehaviour
                 SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 3);
                 Cursor.lockState = CursorLockMode.None;
                 Cursor.visible = true;
-                
+
             }
         }
     }
