@@ -50,7 +50,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: b0d7792ccb2dccd4ea674d7d9380bbbc, type: 3}
       propertyPath: m_Name
-      value: barco Variant
+      value: barco Variant 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -131,5 +131,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d292ed542739bfa489d872bb17ffd09c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 5
+  speed: 4
   explosionSound: {fileID: 8300000, guid: 2e61d78d609ccb741a0822067b27ac6b, type: 3}
