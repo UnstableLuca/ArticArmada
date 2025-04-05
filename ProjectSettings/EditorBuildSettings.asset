@@ -11,21 +11,21 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/SampleScene.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
-  - enabled: 0
-    path: Assets/Scenes/Tutorial.unity
-    guid: 41ac073cf6b6dd24ab378415e094f6cd
   - enabled: 1
-    path: Assets/Scenes/EscenaLucas/SampleScene.unity
-    guid: e0d8aa51d199aaf43a5e37d7ea1629b4
+    path: Assets/Scenes/EscenaLucas/TutorialTerminado.unity
+    guid: 1f0ec471f95470b4e9d0ab18ca88fb61
+  - enabled: 0
+    path: Assets/Scenes/EscenaLucas/Tutorial.unity
+    guid: e1c5b5d71b93ac044b9abd480e534a48
+  - enabled: 1
+    path: Assets/Scenes/EscenaLucas/Tutorial 1.unity
+    guid: e587a96a1f640c748a4eb599111c9d36
   - enabled: 1
     path: Assets/Scenes/Ajustes.unity
     guid: 169e69f25f61dc94c9b2da5dcbeb65e4
   - enabled: 1
     path: Assets/Scenes/Creditos.unity
     guid: d6397f25102c4cb41b92dc322f56f246
-  - enabled: 0
-    path: Assets/Scenes/Equipo.unity
-    guid: 6d152319d199dd74982c1c33c994d15c
   - enabled: 1
     path: Assets/Scenes/Fin tutorial.unity
     guid: 498a86918fc5304448249ca15086e0f0
